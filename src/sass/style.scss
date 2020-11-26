@@ -1,0 +1,10 @@
+@import 'node_modules/modern-normalize/modern-normalize';
+@import "common/mixin.scss";
+@import "common/fonts.scss";
+@import "common/vars.scss";
+@import "common/base.scss";
+
+@import "blocks/visually-hidden.scss";
+@import "blocks/header.scss";
+@import "blocks/nav.scss";
+@import "blocks/footer.scss";

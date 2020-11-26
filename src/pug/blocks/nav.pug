@@ -1,0 +1,6 @@
+nav.nav(aria-label=nav.aria.label aria-hidden="false")
+  .nav__wrapper
+    ul.nav__list
+      each item in nav.list
+        li
+          a.nav__item(class=data.href===item.href ? "nav__item--active" : null href=data.href===item.href ? null : item.href) #{item.name}

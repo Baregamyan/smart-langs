@@ -1,0 +1,12 @@
+doctype html
+block vars
+html(lang="ru")
+  include head
+  body.nojs
+    include svg
+    include /common/mixins
+    include /blocks/header
+    main
+      block content
+    include /blocks/footer
+    script(src="js/script.js")

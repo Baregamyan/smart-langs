@@ -1,0 +1,18 @@
+@mixin container {
+  display: flex;
+  box-sizing: border-box;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: $gap;
+  padding-left: $gap;
+  @media #{$media-tablet} {
+    max-width: $width-tablet;
+    padding-right: $gap-tablet;
+    padding-left: $gap-tablet;
+  }
+  @media #{$media-desktop} {
+    max-width: $width-desktop;
+    padding-right: $gap-desktop;
+    padding-left: $gap-desktop;
+  }
+}

@@ -1,0 +1,26 @@
+{
+	"footer": {
+		"title": "Наши контакты"
+	},
+	"header": {
+		"trigger": {
+			"aria": {
+				"label": "Открыть меню навигации",
+				"pressed": "true",
+				"haspopup": "true"
+			}
+		}
+	},
+	"menu": [
+		{
+			"href": "index.html",
+			"name": "Главная"
+		}
+	],
+	"nav": {
+		"aria": {
+			"label": "Главная навигация"
+		},
+		"list": []
+	}
+}

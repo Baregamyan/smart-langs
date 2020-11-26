@@ -1,0 +1,11 @@
+{
+  "header": {
+    "trigger": {
+      "aria": {
+        "label": "Открыть меню навигации",
+        "pressed": "true",
+        "haspopup": "true"
+      }
+    }
+  }
+}
