@@ -3,6 +3,12 @@
 		"title": "Наши контакты"
 	},
 	"header": {
+		"logo": {
+			"width": "182",
+			"height": "57",
+			"viewbox": "0 0 182 57",
+			"id": "logo"
+		},
 		"trigger": {
 			"aria": {
 				"label": "Открыть меню навигации",
@@ -21,6 +27,23 @@
 		"aria": {
 			"label": "Главная навигация"
 		},
-		"list": []
+		"list": [
+			{
+				"name": "Главная",
+				"href": "index.html"
+			},
+			{
+				"name": "О нас",
+				"href": "about.html"
+			},
+			{
+				"name": "Курсы",
+				"href": "courses.html"
+			},
+			{
+				"name": "Контакты",
+				"href": "contacts.html"
+			}
+		]
 	}
 }

@@ -1,5 +1,11 @@
 {
   "header": {
+    "logo": {
+      "width": "182",
+      "height": "57",
+      "viewbox": "0 0 182 57",
+      "id": "logo"
+    },
     "trigger": {
       "aria": {
         "label": "Открыть меню навигации",

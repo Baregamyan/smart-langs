@@ -1,4 +1,7 @@
 header.header
+  span.header__logo
+    svg.header__svg(viewBox=header.logo.viewbox width=header.logo.width height=header.logo.height)
+      use(xlink:href=`#${header.logo.id}`)
   include ../blocks/nav
   button.header__trigger(type="button" aria-label=header.trigger.aria.label aria-haspopup=header.trigger.aria.haspopup aria-expanded=header.trigger.aria.expanded)
     span.header__burger

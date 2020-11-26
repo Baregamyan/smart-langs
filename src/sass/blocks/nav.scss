@@ -1,3 +1,33 @@
 .nav {
+  position: absolute;
+  top: -300%;
+  left: 0;
+  width: 100%;
 
+  transition: 0.2s linear;
+  &--show {
+    top: 71px;
+  }
+  @media #{$media-tablet} {
+    width: initial;
+    position: static;
+  }
+}
+
+.nav__list {
+  list-style: none;
+  padding: 0;
+  @media #{$media-tablet} {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.nav__link {
+  display: block;
+  padding: 15px 20px;
+  text-align: center;
+  background-color: white;
+  text-decoration: none;
+  color: $color-base;
 }
