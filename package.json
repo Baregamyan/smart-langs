@@ -1,7 +1,7 @@
 {
-  "name": "gulp-starter-kit",
+  "name": "smart-langs",
   "version": "1.0.0",
-  "description": "A simple Gulp 4 Starter Kit for modern frontend development.",
+  "description": "Website for «Smart Langs» online language school",
   "main": "gulpfile.babel.js",
   "dependencies": {},
   "devDependencies": {
