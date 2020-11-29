@@ -4,4 +4,4 @@ section.intro
     p.intro__desc #{intro.desc}
     .intro__links
       each link in intro.links
-        a(class=link.isAccent ? "button intro__link" : "intro__link" href=link.href) #{link.text}
+        a(class=link.isButton ? "button intro__link" : "intro__link" href=link.href) #{link.text}
