@@ -1,10 +1,19 @@
 @font-face {
-  font-weight: 500;
-  font-family: "";
+  font-weight: 400;
+  font-family: "Montserrat";
 
   font-display: swap;
-  src: url("../fonts/") format("woff2"),
-       url("../fonts/") format("woff");
+  src: url("../fonts/montserrat-regular.woff2") format("woff2"),
+       url("../fonts/montserrat-regular.woff") format("woff");
+}
+
+@font-face {
+  font-weight: 600;
+  font-family: "Montserrat";
+
+  font-display: swap;
+  src: url("../fonts/montserrat-bold.woff2") format("woff2"),
+       url("../fonts/montserrat-bold.woff") format("woff");
 }
 
 @font-face {
