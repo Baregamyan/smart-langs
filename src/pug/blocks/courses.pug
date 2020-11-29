@@ -1,0 +1,9 @@
+section.courses
+  h2.title.courses__title #{courses.title}
+  ul.courses__list
+    each course in courses.list
+      li.courses__item
+        h3.courses__name #{course.name}
+        img.courses__img(src=`images/${course.language}.jpg` alt=`${course.name} язык` width="317" height="317")
+        p.courses__desc #{course.desc}
+        a.button.courses__link(href=course.href) Узнать больше

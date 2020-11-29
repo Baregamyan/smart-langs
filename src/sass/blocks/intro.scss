@@ -1,6 +1,7 @@
 .intro {
   position: relative;
   background-color: $color-bg-special;
+  margin-bottom: 50px;
   &::before {
     position: absolute;
     content: "";
