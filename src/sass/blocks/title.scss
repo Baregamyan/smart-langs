@@ -1,0 +1,8 @@
+.title {
+  font-weight: 600;
+  color: black;
+  &--special {
+    text-align: center;
+    color: $color-special;
+  }
+}

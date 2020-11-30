@@ -1,0 +1,10 @@
+section.features
+  h2.title.title--special.features__title #{features.title}
+  p.title.features__land #{features.land}
+  ul.features__list
+    each feature in features.list
+      li.features__item(class=`features__item--${feature.id}`)
+        svg(viewBox=feature.svg.viewbox width=80 height=80)
+          use(xlink:href=`#${feature.id}`)
+        h3.features__name #{feature.name}
+        p.features__desc #{feature.desc}

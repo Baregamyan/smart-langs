@@ -1,0 +1,73 @@
+.features {
+  @include container;
+  flex-direction: column;
+}
+
+.features__land {
+  text-align: center;
+}
+
+.features__list {
+  padding: 0;
+  list-style: none;
+}
+
+.features__clother-color {
+  fill: $color-special;
+}
+
+.features__bright-color {
+  fill: $color-primary;
+}
+
+.features__dark-color {
+  fill: #232323;
+}
+
+.features__white-color {
+  fill: white;
+}
+
+.features__orange-color {
+  fill: #DD763E;
+}
+
+.features__affordable-skin {
+  fill: $color-special;
+}
+
+.features__affordable-coin {
+  fill: $color-primary;
+}
+
+.features__afforable-darker-coin {
+  fill: #FF901D;
+}
+
+.features__afforable-darkest-cont {
+  fill: #DD7219;
+}
+
+.features__flexible-cover {
+  fill: $color-special;
+}
+
+.features__flexible-paper {
+  fill: #f5f5f5;
+}
+
+.features__flexible-paper-darker {
+  fill: #cfd8dc;
+}
+
+.features__flexible-brain {
+  fill: $color-primary;
+}
+
+.features__flexible-brain-darker {
+  fill: #DD7219;
+}
+
+
+
+
