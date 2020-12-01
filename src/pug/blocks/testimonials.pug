@@ -1,0 +1,8 @@
+section.testimonials
+  .testimonials__wrapper
+    h2.title.testimonials__title #{testimonials.title}
+    p.testimonials__text #{testimonials.text}
+    .testimonials__student
+      p.testimonials__student-name #{testimonials.student.name} #{testimonials.student.surname}
+      p.testimonials__student-details #{testimonials.student.city}, #{testimonials.student.age}
+  a.button.button--wide.testimonials__button(href=testimonials.link.href) #{testimonials.link.text}

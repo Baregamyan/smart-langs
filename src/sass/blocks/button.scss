@@ -1,8 +1,13 @@
 .button {
   display: block;
+  font-weight: 600;
   z-index: 1;
   padding: 12px 39px;
   background-color: $color-primary;
   text-align: center;
   text-decoration: none;
+  &--wide {
+    padding: 25px 0;
+    width: 100%;
+  }
 }

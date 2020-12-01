@@ -1,0 +1,44 @@
+.testimonials {
+  @include container;
+  flex-direction: column;
+}
+
+.testimonials__wrapper {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding: 40px 20px;
+  padding-bottom: 0;
+  background-color: $color-special;
+}
+
+.testimonials__title {
+  margin: 0;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.testimonials__text {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.testimonials__student-name {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.testimonials__student-details {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.testimonials__student {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.testimonials__student-name {
+  font-weight: 600;
+}
