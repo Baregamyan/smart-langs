@@ -1,22 +1,85 @@
 .intro {
+  display: flex;
+  align-items: center;
   position: relative;
+  padding-bottom: 150px;
   background-color: $color-bg-special;
   margin-bottom: 50px;
-  &::before {
-    position: absolute;
-    content: "";
+  min-height: 520px;
+  background-image:
+    url("../images/person.svg"),
+    url("../images/wave.svg");
+  background-position: bottom 100px left -160px, bottom -80px left -950px;
+  background-size: 320px 254px, 2000px 215px;
+  background-repeat: no-repeat;
+  @media #{$media-mobile-wide} {
+    min-height: initial;
 
-    width: 320px;
-    height: 254px;
+    padding-bottom: 150px;
+    background-image:
+      url("../images/bgr-circle.svg"),
+      url("../images/wave.svg");
+    background-position: bottom right -550px, bottom -80px center;
+    background-size: 660px 660px, 2000px 215px;
+    &::before {
+      position: absolute;
+      content: "";
 
-    left: -160px;
-    bottom: 0;
+      width: 90px;
+      height: 62px;
 
-    background-image: url("../images/person.svg");
-    background-size: cover;
-    background-repeat: none;
+      z-index: 1;
+
+      right: 10px;
+      bottom: -40px;
+
+      background-image: url("../images/circle-small.svg");
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
   }
-  &::after {
+  @media #{$media-tablet} {
+    min-height: 550px;
+    padding-bottom: 100px;
+    box-sizing: content-box;
+    background-image:
+      url("../images/bgr-circle.svg"),
+      url("../images/wave-long.svg"),
+      url("../images/bgr-figure.svg");
+    background-position: bottom right -550px, bottom -80px center, left -30% top -80px;
+    background-size: 660px 660px, 2000px 215px, 454px 401px;
+  }
+  @media #{$media-desktop} {
+    background-size: 660px 660px, 2000px 215px, 769px 653px;
+  }
+}
+
+.intro__title {
+  margin: 0;
+  margin-bottom: 15px;
+  padding-top: 65px;
+
+  font-family: $font-family-serif;
+  line-height: 1.2;
+  z-index: 1;
+  @media #{$media-mobile-wide} {
+    margin-bottom: 25px;
+  }
+}
+
+.intro__desc {
+  margin-bottom: 150px;
+  z-index: 1;
+  @media #{$media-mobile-wide} {
+    margin-bottom: 25px;
+  }
+}
+
+.intro__wrapper {
+  @include container;
+  position: relative;
+  flex-direction: column;
+  &::before {
     position: absolute;
     content: "";
 
@@ -29,34 +92,52 @@
     background-color: #f8f5f5;
     border-radius: 100%;
   }
+  @media #{$media-tablet} {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    &::before {
+      display: none;
+    }
+  }
 }
 
-.intro__title {
-  margin: 0;
-  margin-bottom: 15px;
-  padding-top: 65px;
+.intro__inner {
   z-index: 1;
-}
-
-.intro__desc {
-  margin-bottom: 150px;
-  z-index: 1;
-}
-
-.intro__wrapper {
-  @include container;
-  flex-direction: column;
+  @media #{$media-mobile-wide} {
+    width: 80%;
+  }
+  @media #{$media-desktop} {
+    max-width: 600px;
+  }
 }
 
 .intro__links {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  max-width: 350px;
   margin-bottom: 50px;
 }
 
 .intro__link {
-  padding: 12px 39px;
   text-decoration: none;
   color: $color-base;
+  &--more {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+.intro__person {
+  display: none;
+  @media #{$media-tablet} {
+    display: block;
+    width: 50%;
+    height: 50%;
+  }
+  @media #{$media-desktop} {
+    width: 539px;
+    height: 395px;
+  }
 }

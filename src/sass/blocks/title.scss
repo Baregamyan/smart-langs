@@ -1,8 +1,12 @@
 .title {
-  font-weight: 600;
+  font-weight: $font-weight-bold;
   color: black;
   &--special {
+    font-size: $font-size-title-special;
     text-align: center;
     color: $color-special;
+  }
+  @media #{$media-tablet} {
+    font-size: 40px;
   }
 }

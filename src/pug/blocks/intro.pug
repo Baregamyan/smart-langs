@@ -1,7 +1,10 @@
 section.intro
   .intro__wrapper
-    h2.title.intro__title #{intro.title}
-    p.intro__desc #{intro.desc}
-    .intro__links
-      each link in intro.links
-        a(class=link.isButton ? "button intro__link" : "intro__link" href=link.href) #{link.text}
+    .intro__inner
+      h2.title.intro__title !{intro.title}
+      p.intro__desc #{intro.desc}
+      .intro__links
+        each link in intro.links
+          a(class=link.isButton ? "button intro__link" : "intro__link intro__link--more" href=link.href) !{link.text}
+    img.intro__person(src=intro.person.src width=intro.person.width height=intro.person.height alt=intro.person.alt)
+

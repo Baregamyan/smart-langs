@@ -5,21 +5,23 @@
 
   position: sticky;
   background-color: white;
-  z-index: 2;
+  z-index: 10;
   top: 0;
 }
 
 .header__logo {
-  padding: 20px;
+  padding: 0 20px;
   box-sizing: border-box;
-  @media #{$media-tablet} {
-  }
 }
 
 .header__svg {
   fill: $color-primary;
   width: 95px;
   height: 29px;
+  @media #{$media-mobile-wide} {
+    width: 115px;
+    height: 39px;
+  }
 }
 
 .header__trigger {
@@ -30,7 +32,7 @@
   background-color: $color-special;
 
   width: 76px;
-  height: 69px;
+  height: 81px;
 
   border: none;
   padding: 0;
