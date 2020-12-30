@@ -353,11 +353,11 @@ a {
 }
 a:hover,
 a:focus {
-  color: #ba8b00;
+  color: #24a9bf;
   text-decoration: none;
 }
 a:active {
-  color: #ffd454;
+  color: #92deea;
 }
 
 .popup-open {
@@ -389,10 +389,10 @@ a:active {
 
   font-weight: 600;
   text-align: center;
-  color: black;
+  color: #f0eae7;
   text-decoration: none; 
 
-  background-color: #ffc107;
+  background-color: #8d39fa;
 }
 .button--wide {
   width: 100%; 
@@ -406,7 +406,7 @@ a:active {
 .title--special {
   font-size: 18px;
   text-align: center;
-  color: #005bb9;
+  color: #52cade;
 }
 @media (min-width: 776px) {
   .title {
@@ -435,7 +435,7 @@ a:active {
   width: 95px;
   height: 29px; 
 
-  fill: #ffc107;
+  fill: #52cade;
 }
 @media (min-width: 480px) {
   .header__svg {
@@ -453,7 +453,7 @@ a:active {
   height: 81px;
   padding: 0; 
 
-  background-color: #005bb9;
+  background-color: #8d39fa;
   border: none;
 }
 
@@ -683,12 +683,13 @@ a:active {
 }
 
 .intro__link {
-  color: #2d2d2d; 
   text-decoration: none;
 }
 .intro__link--more {
   padding-right: 15px;
-  padding-left: 15px;
+  padding-left: 15px; 
+
+  color: #2d2d2d;
 }
 
 .intro__person {
@@ -843,11 +844,11 @@ a:active {
 }
 
 .features__clother-color {
-  fill: #005bb9;
+  fill: #8d39fa;
 }
 
 .features__bright-color {
-  fill: #ffc107;
+  fill: #52cade;
 }
 
 .features__dark-color {
@@ -863,11 +864,11 @@ a:active {
 }
 
 .features__affordable-skin {
-  fill: #005bb9;
+  fill: #8d39fa;
 }
 
 .features__affordable-coin {
-  fill: #ffc107;
+  fill: #52cade;
 }
 
 .features__afforable-darker-coin {
@@ -879,7 +880,7 @@ a:active {
 }
 
 .features__flexible-cover {
-  fill: #005bb9;
+  fill: #8d39fa;
 }
 
 .features__flexible-paper {
@@ -891,7 +892,7 @@ a:active {
 }
 
 .features__flexible-brain {
-  fill: #ffc107;
+  fill: #52cade;
 }
 
 .features__flexible-brain-darker {
@@ -928,9 +929,9 @@ a:active {
   padding: 40px 20px;
   padding-bottom: 0;
 
-  color: white;
+  color: #f0eae7;
 
-  background-color: #005bb9;
+  background-color: #8d39fa;
 }
 
 .testimonials__title {
@@ -965,4 +966,10 @@ a:active {
 
 .testimonials__student-name {
   font-weight: 600;
+}
+
+.testimonials__button {
+  color: #2d2d2d; 
+
+  background-color: #52cade;
 }
