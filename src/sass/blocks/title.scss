@@ -4,7 +4,7 @@
   &--special {
     font-size: $font-size-title-special;
     text-align: center;
-    color: $color-special;
+    color: $color-primary;
   }
   @media #{$media-tablet} {
     font-size: 40px;

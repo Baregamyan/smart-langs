@@ -122,8 +122,8 @@
 
 .intro__link {
   text-decoration: none;
-  color: $color-base;
   &--more {
+    color: $color-base;
     padding-right: 15px;
     padding-left: 15px;
   }
