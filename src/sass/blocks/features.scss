@@ -14,8 +14,19 @@
   list-style: none;
   @media #{$media-tablet} {
     display: flex;
-
+    flex-wrap: wrap;
   }
+}
+
+.features__item {
+  @media #{$media-tablet} {
+    width: 33%;
+  }
+}
+
+.features__icon {
+  width: auto;
+  height: 70px;
 }
 
 .features__clother-color {

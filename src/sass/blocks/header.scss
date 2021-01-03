@@ -10,18 +10,16 @@
 }
 
 .header__logo {
-  padding: 0 20px;
+  width: 65px;
+  height: 75px;
+  padding-left: $gap;
   box-sizing: border-box;
 }
 
 .header__svg {
+  width: 100%;
+  height: 100%;
   fill: $color-primary;
-  width: 95px;
-  height: 29px;
-  @media #{$media-mobile-wide} {
-    width: 115px;
-    height: 39px;
-  }
 }
 
 .header__trigger {

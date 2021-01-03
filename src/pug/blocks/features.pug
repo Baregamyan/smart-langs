@@ -4,7 +4,8 @@ section.features
   ul.features__list
     each feature in features.list
       li.features__item(class=`features__item--${feature.id}`)
-        svg(viewBox=feature.svg.viewbox width=80 height=80)
-          use(xlink:href=`#${feature.id}`)
+        img.features__icon(src=`images/${feature.id}.png` width=feature.width height=feature.height)
+        //- svg(viewBox=feature.svg.viewbox width=80 height=80)
+        //-   use(xlink:href=`#${feature.id}`)
         h3.features__name #{feature.name}
         p.features__desc #{feature.desc}
