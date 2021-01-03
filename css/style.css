@@ -353,11 +353,11 @@ a {
 }
 a:hover,
 a:focus {
-  color: #24a9bf;
+  color: #004e4a;
   text-decoration: none;
 }
 a:active {
-  color: #92deea;
+  color: #00e7de;
 }
 
 .popup-open {
@@ -392,7 +392,7 @@ a:active {
   color: #f0eae7;
   text-decoration: none; 
 
-  background-color: #8d39fa;
+  background-color: #4c6fbf;
 }
 .button--wide {
   width: 100%; 
@@ -406,7 +406,7 @@ a:active {
 .title--special {
   font-size: 18px;
   text-align: center;
-  color: #52cade;
+  color: #009a94;
 }
 @media (min-width: 776px) {
   .title {
@@ -428,20 +428,16 @@ a:active {
 
 .header__logo {
   box-sizing: border-box; 
-  padding: 0 20px;
+  width: 65px;
+  height: 75px;
+  padding-left: 18px;
 }
 
 .header__svg {
-  width: 95px;
-  height: 29px; 
+  width: 100%;
+  height: 100%;
 
-  fill: #52cade;
-}
-@media (min-width: 480px) {
-  .header__svg {
-    width: 115px;
-    height: 39px;
-  }
+  fill: #009a94;
 }
 
 .header__trigger {
@@ -453,7 +449,7 @@ a:active {
   height: 81px;
   padding: 0; 
 
-  background-color: #8d39fa;
+  background-color: #4c6fbf;
   border: none;
 }
 
@@ -487,7 +483,7 @@ a:active {
 
 .nav {
   position: absolute;
-  top: -300%;
+  top: -100vh;
   left: 0;
 
   width: 100%;
@@ -840,15 +836,27 @@ a:active {
 @media (min-width: 776px) {
   .features__list {
     display: flex;
+    flex-wrap: wrap;
   }
 }
 
+@media (min-width: 776px) {
+  .features__item {
+    width: 33%;
+  }
+}
+
+.features__icon {
+  width: auto;
+  height: 70px;
+}
+
 .features__clother-color {
-  fill: #8d39fa;
+  fill: #4c6fbf;
 }
 
 .features__bright-color {
-  fill: #52cade;
+  fill: #009a94;
 }
 
 .features__dark-color {
@@ -864,11 +872,11 @@ a:active {
 }
 
 .features__affordable-skin {
-  fill: #8d39fa;
+  fill: #4c6fbf;
 }
 
 .features__affordable-coin {
-  fill: #52cade;
+  fill: #009a94;
 }
 
 .features__afforable-darker-coin {
@@ -880,7 +888,7 @@ a:active {
 }
 
 .features__flexible-cover {
-  fill: #8d39fa;
+  fill: #4c6fbf;
 }
 
 .features__flexible-paper {
@@ -892,7 +900,7 @@ a:active {
 }
 
 .features__flexible-brain {
-  fill: #52cade;
+  fill: #009a94;
 }
 
 .features__flexible-brain-darker {
@@ -931,7 +939,7 @@ a:active {
 
   color: #f0eae7;
 
-  background-color: #8d39fa;
+  background-color: #4c6fbf;
 }
 
 .testimonials__title {
@@ -969,7 +977,7 @@ a:active {
 }
 
 .testimonials__button {
-  color: #2d2d2d; 
+  color: #ffffff; 
 
-  background-color: #52cade;
+  background-color: #009a94;
 }
