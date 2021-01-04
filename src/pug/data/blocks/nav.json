@@ -17,6 +17,9 @@
         "name": "Вебинары",
         "href": "webinars.html"
       }, {
+        "name": "Блог",
+        "href": "blog.html"
+      }, {
         "name": "Контакты",
         "href": "contacts.html"
       }

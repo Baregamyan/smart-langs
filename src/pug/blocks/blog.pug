@@ -1,0 +1,13 @@
+section.blog
+  h2.title.blog__title #{blog.title}
+  ul.blog__list
+    each article in blog.articles
+      li.blog__item
+        article.blog__article
+          h3.blog__subtitle #{article.title}
+          datatime.blog__date #{article.date}
+          p.blog__text #{article.text}
+          img.blog__image(src=`${article.image.src}.${article.image.format}` height="320")
+          a.blog__link(src=article.link.href) Читать...
+
+
