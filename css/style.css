@@ -483,25 +483,30 @@ a:active {
 
 .nav {
   position: absolute;
-  top: -100vh;
-  left: 0;
+  top: 80px;
+  left: -100vh;
 
   width: 100%;
+  height: 100vh;
 
   transition: 0.2s linear;
 }
 .nav--show {
-  top: 71px;
+  left: 0;
+
+  background-color: #4c6fbf;
 }
 @media (min-width: 776px) {
   .nav {
-    position: static; 
+    position: static;
 
     width: initial;
+    height: auto;
   }
 }
 
 .nav__list {
+  margin: 0;
   padding: 0; 
 
   list-style: none;
@@ -517,11 +522,22 @@ a:active {
   display: block;
   padding: 15px 20px;
 
+  font-weight: 600;
+  font-size: 18px;
   text-align: center;
-  color: #2d2d2d; 
+  color: #ffffff;
   text-decoration: none;
 
-  background-color: white;
+  background-color: transparent;
+}
+@media (min-width: 776px) {
+  .nav__link {
+    font-weight: 400;
+    font-size: 15px;
+    color: #2d2d2d;
+
+    background-color: #ffffff;
+  }
 }
 
 .intro {
@@ -980,4 +996,83 @@ a:active {
   color: #ffffff; 
 
   background-color: #009a94;
+}
+
+.blog {
+  margin-bottom: 30px;
+
+  text-align: center;
+}
+
+.blog__list {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  margin: 0;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0;
+  padding-right: 18px;
+  padding-left: 18px;
+
+  list-style: none;
+}
+@media (min-width: 776px) {
+  .blog__list {
+    max-width: 776px;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+@media (min-width: 1440px) {
+  .blog__list {
+    max-width: 1440px;
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+
+.blog__article {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+  padding: 10px; 
+
+  text-align: left;
+}
+
+.blog__image {
+  order: 1;
+  width: 100%;
+  margin-bottom: 20px;
+
+  border-radius: 5%; 
+
+  object-fit: cover;
+}
+
+.blog__subtitle {
+  order: 2; 
+  margin: 0;
+  margin-bottom: 10px;
+
+  font-size: 16px;
+}
+
+.blog__date {
+  order: 3; 
+  margin-bottom: 10px;
+}
+
+.blog__text {
+  order: 4; 
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.blog__link {
+  order: 5; 
+
+  font-weight: 600;
+  color: #4c6fbf;
 }

@@ -1,1 +1,1 @@
-!function(n){"function"==typeof define&&define.amd?define("script",n):n()}((function(){"use strict";document.body.classList.toggle("nojs",!1)}));
+!function(t){"function"==typeof define&&define.amd?define("script",t):t()}((function(){"use strict";document.body.classList.toggle("nojs",!1);new class{constructor(t){this.class=t,this.nav=document.querySelector(".nav"),this.trigger=document.querySelector(".header__trigger")}init(){this.trigger.addEventListener("click",this.toggle.bind(this))}toggle(){this.nav.classList.toggle("nav--show")}}("nav").init()}));
